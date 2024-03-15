@@ -28,4 +28,69 @@ classDiagram
     class Piezas{
       +JuegoCuarto 
     }
+```
+```mermaid
+classDiagram
+    Piezas"1" *-- "2" Pieza_1
+    Piezas"1" *-- "2" Pieza_2
+    Piezas"1" *-- "2" Pieza_3
+    Piezas"1" *-- "2" Pieza_4
+    Piezas"1" *-- "2" Pieza_5
+    Piezas"1" *-- "2" Pieza_6
+    Piezas"1" *-- "2" Pieza_7
+    Piezas"1" *-- "2" Pieza_8
+    class Piezas{
+        +JuegoCuarto
++color
+    }
+
+    class Pieza_1{
+        -Cuadradra
+        -Alta 
+        -Solida
+        -Posicionar()
+    }
+        class Pieza_2{
+        -Cuadrada
+        -Alta
+        -Hueca
+        -Posicionar()
+    }
+        class Pieza_3{
+        -Cuadrada
+        -Baja
+        -Solida
+        -Posicionar()
+    }
+        class Pieza_4{
+        -Cuadrada
+        -Baja
+        -Hueca
+        -Posicionar()
+    }
+        class Pieza_5{
+        -Redonda
+        -Alta
+        -Solida
+        -Posicionar()
+    }
+        class Pieza_6{
+        -Redonda
+        -Alta
+        -Hueca
+        -Posicionar()
+    }
+        class Pieza_7{
+        -Redonda
+        -Baja
+        -Solida
+        -Posicionar()
+    }
+        class Pieza_8{
+        -Redonda
+        -Baja
+        -Hueca
+        -Posicionar()
+    }
+```
 
